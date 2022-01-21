@@ -17,16 +17,20 @@
     <div class="container">
         <div class="login">
            <form action="page2.php" method="get">
-                <div class="title">
-                    <img src="image/dota-2.png" alt="" srcset="">
-                    <h3>DOTA 2</h3>
-                </div><br>
-
-                <div><label for="">Username</label><br>
-                    <input type="text" placeholder="Username" name="Username"></div><br>
-                <div><label for="">Password</label><br>
-                    <input type="password" name="Password" id="" placeholder="Password"></div><br>
-                <div class="sign"><button type="submit">Start</button></div><br>
+               <div class="title">
+                   <img src="image/dota-2.png" alt="" srcset="">
+                   <h3>DOTA 2</h3>
+               </div>       
+               <br>
+               <div><label for="">Username</label><br>
+                   <input type="text" placeholder="Username" name="Username">
+               </div>
+               <br>
+               <div><label for="">Password</label><br>
+                   <input type="password" name="Password" id="" placeholder="Password">
+               </div>
+               <br>
+               <div class="sign"><button type="submit">Start</button></div><br>
 
 
             </form>
