@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Page 2</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -14,12 +14,17 @@
 
 <body>
     <!-- header -->
-    <header>
+     <header>
         <img src="image/dota-2.png" alt="" srcset="">
-        <h2>welcome</h2>
-        <h2>name</h2>
+        
+        <?php
+
+            echo('<h2>' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
+
+        ?>
 
     </header>
+    
     <!-- navigation -->
     <div class="nav">
         <a class="navig all active" id="all1" href="#">ALL</a>
@@ -41,13 +46,6 @@
         </div>
 
     </div>
-
-
-
-
-</body>
-
-</html>
 
 
 
