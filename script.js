@@ -85,7 +85,6 @@ $(document).ready(function() {
             });
             $('#container1').html(semua);
         })
-
     })
 
 
