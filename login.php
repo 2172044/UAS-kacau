@@ -8,12 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
     <link rel="stylesheet" href="login.css">
-
 </head>
-
 <body>
     <!-- // <div class="judul"> Fill in this form </div> -->
-
     <div class="container">
         <div class="login">
            <form action="page2.php" method="get">
@@ -31,12 +28,8 @@
                </div>
                <br>
                <div class="sign"><button type="submit">Start</button></div><br>
-
-
             </form>
         </div>
     </div>
-
 </body>
-
 </html>
