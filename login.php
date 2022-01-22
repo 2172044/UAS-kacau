@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
     
     <!-- // <div class="judul"> Fill in this form </div> -->
     <div class="container">
@@ -30,18 +29,15 @@
                    <input type="password" name="Password" id="password" placeholder="Password">
                </div>
                <br>
-               <div><label for="password2">Konfirmasi password</label><br>
-                   <input type="password" name="Password2" id="password2" placeholder="Password">
+               <div><label for="password2">Confirm password</label><br>
+                   <input type="password" name="Password2" id="password2" placeholder="Confirm">
                </div>
                <br>
                <div class="sign"><button type="submit" name="btnSubmit">Start</button></div><br>
-
             </form>
         </div>
     </div>
-
     <script>
-
         function cekData() {
             if (document.forms["FormStart"]["Username"].value == "") {
                 alert("Username tidak boleh kosong!");
@@ -68,6 +64,5 @@
   
         };
     </script>
-
 </body>
 </html>
