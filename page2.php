@@ -14,12 +14,14 @@
 
 <body>
     <!-- header -->
+
      <header>
         <img src="image/dota-2.png" alt="" srcset="">
         
         <?php
 
-            echo('<h2>' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
+            echo('<h2 style="font-family: fantasy;">' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
+
 
         ?>
 
@@ -27,11 +29,11 @@
     
     <!-- navigation -->
     <div class="nav">
+
         <a class="navig all active" id="all1" href="#">ALL</a>
         <a class="navig carry" href="#">Melee</a>
         <a class="navig escape" href="#">Ranged</a>
-   
-
+        
 
     </div>
     <!-- box content -->
@@ -46,9 +48,6 @@
         </div>
 
     </div>
-
-
-
 
 </body>
 
