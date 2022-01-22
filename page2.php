@@ -14,18 +14,26 @@
 
 <body>
     <!-- header -->
-
      <header>
         <img src="image/dota-2.png" alt="" srcset="">
         
         <?php
 
-            echo('<h2 style="font-family: fantasy;">' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
+            echo('<h2 style="font-family: sans-serif;">' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
 
 
         ?>
+  <div class="grup">
+
+        <div class="tambah">
+            <a href="page3.php"><button>Search</button>
+
+        </div>
+
+    </div>
 
     </header>
+  
     
     <!-- navigation -->
     <div class="nav">
@@ -39,7 +47,7 @@
     <!-- box content -->
     <div class="container" id="container1">
         <div class="card" id="card1">
-            <a href="page3.html"> <img src="" class="card-img" alt="" srcset="">
+           <img src="" class="card-img" alt="" srcset="">
                 <h5 class="card-title"></h5>
 
             </a>
@@ -48,6 +56,19 @@
         </div>
 
     </div>
+        
+  <?php
+
+        print_r($_GET);
+        echo ('<h2>' . $_GET['Username'] . '<h2>');
+        if (isset($_GET['btnSubmit'])) {
+            echo ('<h2> Add data </h2>');
+        }
+        else{
+            echo ('<h2> Add data </h2>');
+        }
+    
+    ?> 
 
 </body>
 
