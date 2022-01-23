@@ -1,4 +1,4 @@
-        body {
+body {
     height: 800px;
     background-image: linear-gradient(-20deg, black, grey, rgb(202, 97, 36));
     font-family: 'Mulish', sans-serif;
@@ -16,13 +16,14 @@
 
 .container {
     background-image: url(image/dota-1.jpg);
-    background-size: 140%;
+    background-size: 150%;
     margin: auto;
     max-width: 600px;
     width: 100%;
-    height: fit-content;
+    height: 500px;
     display: flex;
     padding: 0%;
+    box-shadow: 5px 8px 7px;
 }
 
 .login {
@@ -46,6 +47,7 @@ img {
     height: 65px;
     margin-bottom: -25px;
     margin-left: 5%;
+    margin-top: -30px;
 }
 
 input {
