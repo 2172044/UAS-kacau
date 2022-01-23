@@ -14,7 +14,7 @@
     <!-- // <div class="judul"> Fill in this form </div> -->
     <div class="container">
         <div class="login">
-           <form action="page2.html" method="get" name="FormStart" onsubmit="return cekData()">
+           <form action="page2.php" method="get" name="FormStart" onsubmit="return cekData()">
            
                <div class="title">
                    <img src="image/dota-2.png" alt="" srcset="">
