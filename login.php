@@ -14,7 +14,7 @@
     <!-- // <div class="judul"> Fill in this form </div> -->
     <div class="container">
         <div class="login">
-           <form action="page2.php" method="get" name="FormStart" onsubmit="return cekData()">
+           <form action="page2.html" method="get" name="FormStart" onsubmit="return cekData()">
            
                <div class="title">
                    <img src="image/dota-2.png" alt="" srcset="">
@@ -22,15 +22,15 @@
                </div>       
                <br>
                <div><label for="">Username</label><br>
-                   <input type="text" placeholder="Username" name="Username" id="username">
+                   <input type="text" placeholder="Username" name="Username" id="username" minlength="4">
                </div>
                <br>
                <div><label for="">Password</label><br>
-                   <input type="password" name="Password" id="password" placeholder="Password">
+                   <input type="password" name="Password" id="password" placeholder="Password" minlength="8">
                </div>
                <br>
                <div><label for="password2">Confirm password</label><br>
-                   <input type="password" name="Password2" id="password2" placeholder="Confirm">
+                   <input type="password" name="Password2" id="password2" placeholder="Comfirm">
                </div>
                <br>
                <div class="sign"><button type="submit" name="btnSubmit">Start</button></div><br>
