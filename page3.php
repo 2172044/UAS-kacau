@@ -15,7 +15,7 @@
     <div class="containersearch">
         <div class="search"> <input type="text" name="" placeholder="Hero Name" id="save">
             <div class="inputbutton">
-                <button type="button" id="mybutton">Search</button>
+                <button type="button" id="mybutton" class="mybutton">Search</button>
             </div>
         </div>
 
@@ -29,17 +29,26 @@
         <div class="info">
             <h3>Hero1</h3>
         </div>
-        <div class="stats" id="status">
+        <div class="stats">
 
-
+        
+            <ul>
+                <li>
+            <div id="status"></div>
+            </li></ul>
+            <ul>
+                <li class="detailnya">
+            <div id="satu"></div>
+            <div id="dua"></div>
+            <div id="tiga"></div>
+            <div id="for"></div>
+            <div id="lima"></div>
+            <div id="enam"></div>
+                </li>
+            </ul>
         </div>
         
-        <div id="satu">Detail Heronya</div>
-        <div id="dua">Detail Heronya</div>
-        <div id="tiga">Detail Heronya</div>
-        <div id="for">Detail Heronya</div>
-        <div id="lima"></div>
-        <div id="enam"></div>
+    
     </div>
 </body>
 
