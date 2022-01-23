@@ -14,12 +14,15 @@
 <body>
     <div class="containersearch">
         <div class="search"> <input type="text" name="" placeholder="Hero Name" id="save">
-            <div class="inputbutton">
-                <button type="button" id="mybutton" class="mybutton">Search</button>
-            </div>
+        <div class="inputbutton">
+            <button type="button" id="mybutton" class="mybutton">Search</button>
+        </div>
+        <div class="logout">
+          <a href="login.php"><button id="keluar" onclick="return logOut()">Log Out</button></a>
+        </div>
         </div>
 
-
+        
     </div>
 
     <div class="carddetail">
@@ -48,6 +51,14 @@
             </ul>
         </div>
         
+        <script>
+            function logOut(){
+                if(document.getElementById('keluar').onclick){
+                    let out = confirm('Apakah anda ingin Log Out?');
+                    return out;
+                }
+            }
+        </script>
     
     </div>
 </body>
