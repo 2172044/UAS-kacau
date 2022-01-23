@@ -33,7 +33,7 @@ $(document).ready(function() {
                     $('#enam').text('Projectile Speed : ' + data.projectile_speed)
 
 
-                    let text = "<ul> Role";
+                    let text = "<ul> Role:";
                     for (let i = 0; i < a.length; i++) {
                         text += "<li>" + a[i] + "</li>";
                     }
