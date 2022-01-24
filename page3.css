@@ -1,140 +1,176 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-body{
-    background-image: url('image/dota3.jpg');
+
+body {
+    position: relative;
+    background-image: url('image/dota3.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: black;
-    font-family: lato,sans-serif;
-
+    font-family: lato, sans-serif;
 }
-.carddetail{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    margin: 10%auto;
-    max-height: 700px;
-    margin-top: 70px;
 
-}
-.img{
-    background-image: linear-gradient(to bottom right, black , grey);
-    height: 200px;
+.carddetail {
+    width: 25%;
+    height: 525px;
+    margin: auto;
+    margin-top: 3%;
     position: relative;
-    width: 100%;
-    border-radius: 5px;
-    margin-top: 1px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+}
 
-}
-.img img{
+.img {
+    background-image: linear-gradient(to top, rgb(87, 87, 87), black);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 260px;
-    height: 160px;
-    transform: translate(-50%, -50%);
-}
-.info{
     width: 100%;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    height: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    height: 45px;
+    top: 262px;
+    width: 100%;
     text-align: center;
-    background-color: grey;
+    background-image: linear-gradient(rgb(104, 102, 102), rgb(56, 55, 55));
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
 }
-.info h2{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.stats{
+
+.stats {
+    background-image: linear-gradient(to top, rgb(138, 135, 135), rgb(80, 77, 77));
+    top: 307px;
+    position: absolute;
     font-size: 14px;
-    padding-top: 5px;
     display: flex;
     width: 100%;
-    height: 140px;
-    background-color:#a9a9a9;
+    height: 220px;
+    border-radius: 5px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-
 }
-ul{
+
+ul {
     margin-left: 17px;
     margin-top: 7px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
-.detailnya{
+
+.detailnya {
     margin-top: 8px;
     margin-left: 25px;
-    
 }
-.containersearch{
+
+.containersearch {
     background-color: whitesmoke;
     height: 65px;
     width: auto;
     padding-top: 20px;
     background-image: linear-gradient(black, brown);
-   
 }
-.search{
+
+.search {
     display: inline;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 18px;
 }
-.search input{
+
+.search input {
     font-size: 18px;
     height: 32px;
     width: 250px;
     color: Black;
     text-indent: 10px;
-    background-color:#708090;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    background-color: rgba(162, 162, 163, 0.8);
+    border-radius: 5px;
+    border: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
-.search ::placeholder{
+
+.search ::placeholder {
+    font-size: 13pt;
     color: #bdbebd;
+    font-style: italic;
 }
-.inputbutton{
+
+.inputbutton {
+    border: none;
     display: inline-block;
     height: 32px;
     width: 90px;
     color: black;
 }
-.inputbutton button{
+
+.inputbutton button {
+    border: none;
     margin-left: 10px;
     height: 32px;
     width: 90px;
     color: black;
     font-size: 15px;
-    background-color: #666699;
+    background-color: rgb(141, 140, 139);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
 }
-.logout{
+
+.inputbutton button:hover {
+    background-color: rgb(47, 47, 47);
+    color: blanchedalmond;
+}
+
+.logout {
     float: right;
     margin-right: 25px;
 }
-.logout button{
+
+.logout button {
     width: 90px;
     height: 32px;
-    background-color: #B2BEB5;
-    border-bottom: none;
-    border-top: none;
+    background-color: rgb(47, 47, 47);
+    border: none;
+    border-radius: 5px;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#before {
+    position: fixed;
+    text-decoration: none;
+    color: goldenrod;
+    background-color: rgba(162, 162, 163, 0.5);
+    top: 85%;
+    width: 100%;
+    border-radius: 50%;
+    left: 90%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#before:hover {
+    background-color: rgb(19, 18, 18);
 }
