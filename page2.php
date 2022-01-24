@@ -14,52 +14,49 @@
 
 <body>
     <!-- header -->
-     <header>
+    <header>
         <img src="image/dota-2.png" alt="" srcset="">
-        
-        
+
+
         <?php
 
-            echo('<h2 style="font-family: sans-serif;">' . 'Welcome ' . ' ' . $_GET['Username'] . '</h2>');
+            echo('<h2 style="font-family: sans-serif;">' . 'Welcome ' . ' '. $_GET['Username'] . '</h2>');
 
 
         ?>
-  <div class="grup" id="grup1">
+            <div class="grup" id="grup1">
 
-        <div class="tambah">
-            <a href="page3.php"><button>Detail Hero</button>
+                <div class="tambah">
 
-        </div>
+                </div>
 
-    </div>
+            </div>
 
     </header>
-  
-    
+
+
     <!-- navigation -->
     <div class="nav">
 
-        <a class="navig all active" id="all1" href="#">ALL</a>
-        <a class="navig carry" href="#">Melee</a>
-        <a class="navig escape" href="#">Ranged</a>
-        
-
+        <a class="navig grup2 active" id="all1" href="#">ALL</a>
+        <a class="navig grup2" href="#">Melee</a>
+        <a class="navig grup2" href="#">Ranged</a>
+        <a class="grup2" href="page3.php" target="blank">Detail Hero</a>
     </div>
+
     <!-- box content -->
     <div class="container" id="container1">
         <div class="card" id="card1">
-           <img src="" class="card-img" alt="" srcset="">
-                <h5 class="card-title"></h5>
-
-          
-
-  
+            <img src="" class="card-img" alt="" srcset="">
+            <h5 class="card-title"></h5>
         </div>
 
     </div>
-        <div id="bawah">
-        <a href="#all1" id="ref2"><div id="back">Back to top</div></a>
-  
+    <div id="bawah">
+        <a href="#all1" id="ref2">
+            <div id="back">Back to top</div>
+        </a>
+
 </body>
 
 </html>
