@@ -120,3 +120,24 @@ img {
     border-top: none;
     border-right: none;
 }
+#bawah{
+    border-radius: 100%;
+    background-color:  rgba(162, 162, 163, 0.8);
+    width: 120px;
+    height: 120px;
+    position:fixed;
+    z-index: 3;
+    text-align: center;
+    right: 20px;
+    bottom: 20px;
+    float: right;
+}
+#ref2{
+    color: white;
+    text-decoration: none;
+}
+#back{
+    margin-top: 50px;
+    font-size: 20px;
+    
+}
