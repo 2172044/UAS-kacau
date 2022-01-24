@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="page3.js"></script>
+    <script src="script3.js"></script>
     <link rel="stylesheet" href="page3.css">
 </head>
 
@@ -16,11 +16,12 @@
 
     <div class="containersearch">
         <ins></ins>
-        <div class="search"> <input type="heroName" name="" placeholder="Type hero name" id="save">
+        <div class="search"> <input type="heroName" name="" placeholder="Type hero name here.." id="save">
 
             <div class="inputbutton">
                 <button type="button" id="mybutton" class="mybutton">Search</button>
             </div>
+
         </div>
         <div class="logout">
             <a href="login.php"><button id="keluar" onclick="return logOut()">Log Out</button></a>
@@ -28,15 +29,15 @@
 
 
     </div>
-    <!-- CARD BAR -->
+    <!-- CARD -->
     <div class="carddetail">
         <div class="img">
-            <img src="image/oops.jpg" alt="hero">
+            <img src="image/oops.jpeg" alt="hero">
         </div>
         <div class="info">
             <h3>No hero is found!</h3>
         </div>
-        <div class="stats">
+        <div class="stats" id="over">
 
 
             <ul>
@@ -47,23 +48,33 @@
             <ul>
                 <li class="detailnya">
                     <div id="satu"></div>
+                    <br>
                     <div id="dua"></div>
+                    <br>
                     <div id="tiga"></div>
+                    <br>
                     <div id="for"></div>
+                    <br>
                     <div id="lima"></div>
+                    <br>
                     <div id="enam"></div>
                 </li>
             </ul>
         </div>
-
-        <script>
-            function logOut() {
-                if (document.getElementById('keluar').onclick) {
-                    let out = confirm('Apakah anda ingin Log Out?');
-                    return out;
-                }
-            }
-        </script>
-
+    </div class="back">
+    <a href="page2.php" id="before">
+        Back
+    </a>
     </div>
+
+    <script>
+        function logOut() {
+            if (document.getElementById('keluar').onclick) {
+                let out = confirm('Apakah anda ingin Log Out?');
+                return out;
+            }
+        }
+    </script>
+
+
 </body>
