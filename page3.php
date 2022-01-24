@@ -12,55 +12,58 @@
 </head>
 
 <body>
+    <!-- NAVIG BAR -->
+
     <div class="containersearch">
-        <div class="search"> <input type="text" name="" placeholder="Hero Name" id="save">
-        <div class="inputbutton">
-            <button type="button" id="mybutton" class="mybutton">Search</button>
+        <ins></ins>
+        <div class="search"> <input type="heroName" name="" placeholder="Type hero name" id="save">
+
+            <div class="inputbutton">
+                <button type="button" id="mybutton" class="mybutton">Search</button>
+            </div>
         </div>
         <div class="logout">
-          <a href="login.php"><button id="keluar" onclick="return logOut()">Log Out</button></a>
-        </div>
+            <a href="login.php"><button id="keluar" onclick="return logOut()">Log Out</button></a>
         </div>
 
-        
+
     </div>
-
+    <!-- CARD BAR -->
     <div class="carddetail">
         <div class="img">
-            <img src="image/dota-2.png" alt="hero">
+            <img src="image/oops.jpg" alt="hero">
         </div>
         <div class="info">
-            <h3>Hero1</h3>
+            <h3>No hero is found!</h3>
         </div>
         <div class="stats">
 
-        
+
             <ul>
                 <li>
-            <div id="status"></div>
-            </li></ul>
+                    <div id="status">Coba lagi dong!</div>
+                </li>
+            </ul>
             <ul>
                 <li class="detailnya">
-            <div id="satu"></div>
-            <div id="dua"></div>
-            <div id="tiga"></div>
-            <div id="for"></div>
-            <div id="lima"></div>
-            <div id="enam"></div>
+                    <div id="satu"></div>
+                    <div id="dua"></div>
+                    <div id="tiga"></div>
+                    <div id="for"></div>
+                    <div id="lima"></div>
+                    <div id="enam"></div>
                 </li>
             </ul>
         </div>
-        
+
         <script>
-            function logOut(){
-                if(document.getElementById('keluar').onclick){
+            function logOut() {
+                if (document.getElementById('keluar').onclick) {
                     let out = confirm('Apakah anda ingin Log Out?');
                     return out;
                 }
             }
         </script>
-    
+
     </div>
 </body>
-
-</html>
