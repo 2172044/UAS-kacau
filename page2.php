@@ -24,7 +24,7 @@
 
 
         ?>
-  <div class="grup">
+  <div class="grup" id="grup1">
 
         <div class="tambah">
             <a href="page3.php"><button>Detail Hero</button>
@@ -53,12 +53,13 @@
 
           
 
-
+  
         </div>
 
     </div>
-        
-
+        <div id="bawah">
+        <a href="#all1" id="ref2"><div id="back">Back to top</div></a>
+  
 </body>
 
 </html>
