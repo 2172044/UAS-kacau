@@ -2,38 +2,39 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
-    
+
     <!-- // <div class="judul"> Fill in this form </div> -->
     <div class="container">
-        <div class="login">
-           <form action="page2.php" method="get" name="FormStart" onsubmit="return cekData()">
-           
-               <div class="title">
-                   <img src="image/dota-2.png" alt="" srcset="">
-                   <h3>DOTA 2</h3>
-               </div>       
-               <br>
-               <div><label for="">Username</label><br>
-                   <input type="text" placeholder="Username" name="Username" id="username" minlength="4">
-               </div>
-               <br>
-               <div><label for="">Password</label><br>
-                   <input type="password" name="Password" id="password" placeholder="Password" minlength="8">
-               </div>
-               <br>
-               <div><label for="password2">Confirm password</label><br>
-                   <input type="password" name="Password2" id="password2" placeholder="Comfirm">
-               </div>
-               <br>
-               <div class="sign"><button type="submit" name="btnSubmit">Start</button></div><br>
+        <div class="login" id="log" onmousemove="myMoveFunction()">
+            <form action="page2.php" method="get" name="FormStart" onsubmit="return cekData()">
+
+                <div class="title">
+                    <img src="image/dota-2.png" alt="" srcset="">
+                    <h3>DOTA 2</h3>
+                </div>
+                <br>
+                <div><label for="">Username</label><br>
+                    <input type="text" placeholder="Username" name="Username" id="username">
+                </div>
+                <br>
+                <div><label for="">Password</label><br>
+                    <input type="password" name="Password" id="password" placeholder="Password">
+                </div>
+                <br>
+                <div><label for="password2">Confirm password</label><br>
+                    <input type="password" name="Password2" id="password2" placeholder="Confirm">
+                </div>
+                <br>
+                <div class="sign"><button type="submit" name="btnSubmit">Start</button></div><br>
             </form>
         </div>
     </div>
@@ -51,7 +52,7 @@
                 document.forms["FormStart"]["Password"].focus();
                 return false;
             }
-            if (document.forms["FormStart"]["Password2"].value == "" ) {
+            if (document.forms["FormStart"]["Password2"].value == "") {
                 alert("Mohon konfirmasi password terlebih dahulu!");
                 document.forms["FormStart"]["Password2"].focus();
                 return false;
@@ -61,8 +62,16 @@
                 document.forms["FormStart"]["Password2"].focus();
                 return false;
             };
-  
+
         };
     </script>
+    <script>
+        function myMoveFunction() {
+            var a = Math.floor(Math.random() * 254)
+
+            document.querySelector("#log").style.backgroundColor = "rgba(162, 162, " + a + ",0.8)";
+        }
+    </script>
 </body>
+
 </html>
