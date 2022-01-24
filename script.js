@@ -13,12 +13,10 @@ $(document).ready(function() {
             //   `);
 
             semua += `<div class="card" id="card1">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"> <img src="https://api.opendota.com` + data.img + `" class="card-img" alt="" srcset="">
-                 <h5 class="card-title">` + data.localized_name + `</h5>
- 
-            </a>
- 
- 
+           
+            <img src="https://api.opendota.com` + data.img + `" alt="" srcset="">
+            <h5 class="card-title">` + data.localized_name + `</h5>
+
             
              </div>`
 
@@ -32,7 +30,7 @@ $(document).ready(function() {
         $(this).addClass('active');
 
         let atak = $(this).html();
-        $('h1').html(atak)
+        // $('h1').html(atak)
 
         $.getJSON('https://api.opendota.com/api/heroStats', function(result) {
             let all = result;
@@ -40,14 +38,12 @@ $(document).ready(function() {
             $.each(all, function(i, data) {
                 if (data.attack_type == atak) {
                     sebagian += `<div class="card" id="card1">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"> <img src="https://api.opendota.com` + data.img + `" class="card-img" alt="" srcset="">
-                 <h5 class="card-title">` + data.localized_name + `</h5>
- 
-            </a>
- 
- 
-            
-             </div>`
+           
+                    <img src="https://api.opendota.com` + data.img + `" alt="" srcset="">
+                    <h5 class="card-title">` + data.localized_name + `</h5>
+        
+                    
+                     </div>`
 
                 }
 
@@ -58,7 +54,7 @@ $(document).ready(function() {
 
 
     });
-    $('.all').on('click', function() {
+    $('#all1').on('click', function() {
         $.getJSON('https://api.opendota.com/api/heroStats', function(result) {
             let all = result;
             let semua = ''
@@ -73,14 +69,12 @@ $(document).ready(function() {
                 //   `);
 
                 semua += `<div class="card" id="card1">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"> <img src="https://api.opendota.com` + data.img + `" class="card-img" alt="" srcset="">
-                 <h5 class="card-title">` + data.localized_name + `</h5>
- 
-            </a>
- 
- 
-            
-             </div>`
+           
+                <img src="https://api.opendota.com` + data.img + `" alt="" srcset="">
+                <h5 class="card-title">` + data.localized_name + `</h5>
+    
+                
+                 </div>`
 
             });
             $('#container1').html(semua);
