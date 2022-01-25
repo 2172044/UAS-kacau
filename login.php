@@ -9,14 +9,11 @@
     <title>log in</title>
     <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-
     <!-- // <div class="judul"> Fill in this form </div> -->
     <div class="container">
         <div class="login" id="log" onmousemove="myMoveFunction()">
             <form action="page2.php" method="get" name="FormStart" onsubmit="return cekData()">
-
                 <div class="title">
                     <img src="image/dota-2.png" alt="" srcset="">
                     <h3>DOTA 2</h3>
@@ -27,7 +24,8 @@
                 </div>
                 <br>
                 <div><label for="">Password</label><br>
-                    <input type="password" name="Password" id="password" placeholder="Password">
+                    <input type="password" name="Password" id="password" placeholder="Password" minlength="4">
+>
                 </div>
                 <br>
                 <div><label for="password2">Confirm password</label><br>
@@ -62,16 +60,13 @@
                 document.forms["FormStart"]["Password2"].focus();
                 return false;
             };
-
         };
     </script>
     <script>
         function myMoveFunction() {
             var a = Math.floor(Math.random() * 254)
-
             document.querySelector("#log").style.backgroundColor = "rgba(162, 162, " + a + ",0.8)";
         }
     </script>
 </body>
-
 </html>
