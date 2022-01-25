@@ -16,7 +16,6 @@ $(document).ready(function() {
            
             <img src="https://api.opendota.com` + data.img + `" alt="" srcset="">
             <h5 class="card-title">` + data.localized_name + `</h5>
-
             
              </div>`
 
