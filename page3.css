@@ -6,7 +6,7 @@
 
 body {
     position: relative;
-    background-image: url('image/dota3.jpeg');
+    background-image: url('image/dota3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,23 +154,4 @@ li {
     border-radius: 5px;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#before {
-    position: fixed;
-    text-decoration: none;
-    color: goldenrod;
-    background-color: rgba(162, 162, 163, 0.5);
-    top: 85%;
-    width: 100%;
-    border-radius: 50%;
-    left: 90%;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    padding-top: 30px;
-}
-
-#before:hover {
-    background-color: rgb(19, 18, 18);
 }
